@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 geminiElement.classList.remove('gemini-fade-in');
                 geminiElement.classList.add('gemini-fade-out');
             }, 2000); // Fade out after 2 seconds
-            setTimeout(startCrawl, 3000); // Start crawl animation after 3 seconds
+            setTimeout(startCrawl, 2000); // Start crawl animation after 3 seconds
         }
 
         setInterval(drawStars, 30); // Continue star dust animation
