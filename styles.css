@@ -1,7 +1,7 @@
 body {
     margin: 0;
     overflow: hidden;
-    background: url('wp3840342-never-look-away-movie-wallpapers.png') no-repeat center center fixed; /* Add your background image URL here */
+    background: url('/wp3840342-never-look-away-movie-wallpapers.png') no-repeat center center fixed; /* Add your background image URL here */
     background-size: cover; /* Ensure the background covers the entire screen */
     color: yellow;
     font-family: 'Arial', sans-serif;
@@ -13,7 +13,7 @@ body {
 }
 
 .crawl-container {
-    width: 60%;
+    width: 80%; /* Adjusted width for better display on small devices */
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -52,9 +52,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.8); /* Adjusted scale to fit better on smaller screens */
     color: yellow;
-    font-size: 2.5em;
+    font-size: 1.5em; /* Adjusted font size for better visibility */
     text-align: center;
     opacity: 0;
 }
@@ -90,5 +90,25 @@ body {
     }
     to {
         opacity: 0;
+    }
+}
+
+/* Media query to adjust background and Gemini size on smaller screens */
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Retain cover for smaller screens */
+    }
+
+    .crawl-container {
+        width: 90%; /* Adjusted width for better display on smaller devices */
+    }
+
+    .star-wars-intro {
+        font-size: 0.8em; /* Adjusted font size for smaller screens */
+    }
+
+    #gemini {
+        transform: translate(-50%, -50%) scale(0.5); /* Adjusted scale for smaller screens */
+        font-size: 1em; /* Adjusted font size for smaller screens */
     }
 }
