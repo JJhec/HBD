@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         drawStars();
 
         // Pop Gemini star with fade in and out after a delay
-        setTimeout(popGemini, 5000);
+        setTimeout(popGemini, 1500);
 
         function popGemini() {
             const geminiElement = document.getElementById('gemini');
